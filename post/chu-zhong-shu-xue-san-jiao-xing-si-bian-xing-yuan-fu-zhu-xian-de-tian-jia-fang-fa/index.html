@@ -1,0 +1,808 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>
+      无影博客
+</title>
+<meta name="description" content="我是无影,主要更新blibli的几部沙雕动画.有时间会更别的东西." />
+<link rel="shortcut icon" href="https://wyblog1.github.io/favicon.ico">
+<link rel="stylesheet" href="https://wyblog1.github.io/styles/main.css">
+
+<script src="https://wyblog1.github.io/media/js/jquery.min.js"></script>
+<script src="https://wyblog1.github.io/media/js/masonry.pkgd.min.js"></script>
+<script src="https://wyblog1.github.io/media/js/aos.js"></script>
+<script src="https://wyblog1.github.io/media/js/pace.min.js"></script>
+<script src="https://wyblog1.github.io/media/js/view-image.min.js"></script>
+<script src="https://wyblog1.github.io/media/js/jquery.magnific-popup.min.js"></script>
+<script src="https://wyblog1.github.io/media/js/functions.js"></script>
+    <meta name="referrer" content="never">
+    <meta name="description" content="1.三角形中常见辅助线的添加
+
+与角平分线有关的
+
+（1） 可向两边作垂线。
+（2）可作平行线，构造等腰三角形
+（3）在角的两边截取相等的线段，构造全等三角形
+
+与线段长度相关的
+
+（1）截长：证明某两条线段的和或差等于第三条线段时，经常在..." />
+    <meta name="keywords" content="学科" />
+    <script src="https://wyblog1.github.io/media/js/waterfall.min.js"></script>
+    <script src="https://wyblog1.github.io/media/js/prism.min.js"></script>
+  </head>
+  <body>
+            <header id="header" class="grid-container">
+        <!-- start: .menu-wrapper -->
+        <div class="menu-mobile"> 
+          <i class="fa fa-reorder"></i>
+        </div>
+        <div class="menu-wrapper">
+          <div class="">
+            <div class="logo">
+              <a href="https://wyblog1.github.io"><img src="\media\images\custom-headerLogo.png" alt=""></a>
+
+
+                    </div>
+             </p>
+          </div>
+            <!-- start: .main-nav -->
+
+            <nav class="main-nav grid-container grid-parent">
+              <ul id="menu-header" class="menu gradient-effect">
+
+                
+                  <li class="" >
+                    <a href="/" class="menu">
+                      ❄️首页
+                    </a>
+                  </li>
+                
+                  <li class="" >
+                    <a href="/archives" class="menu">
+                      🗄️归档
+                    </a>
+                  </li>
+                
+                  <li class="" >
+                    <a href="/tags" class="menu">
+                      🏷️标签
+                    </a>
+                  </li>
+                
+                  <li class="" >
+                    <a href="/post/mian-ze-sheng-ming-1" class="menu">
+                      🌐免责声明
+                    </a>
+                  </li>
+                
+                  <li class="" >
+                    <a href="/post/yin-si-zheng-ce" class="menu">
+                      🔒隐私政策
+                    </a>
+                  </li>
+                
+                  <li class="" >
+                    <a href="/post/copyright" class="menu">
+                      ©︎版权声明
+                    </a>
+                  </li>
+                
+                  <li class="" >
+                    <a href="/tag/lab" class="menu">
+                      🧪实验室
+                    </a>
+                  </li>
+                
+                  <li class="" >
+                    <a href="https://precious-duckanoo-a17631.netlify.app/" class="menu">
+                      🚇前往
+                    </a>
+                  </li>
+                
+                  <li class="" >
+                    <a href="/tag/eLwD0kcI2" class="menu">
+                      ✨关于
+                    </a>
+                  </li>
+                
+                  <li class="" >
+                    <a href="https://api.wyblog.repl.co/" class="menu">
+                      👂听音乐
+                    </a>
+                  </li>
+                
+                  <li class="" >
+                    <a href="/friends" class="menu">
+                      🤗友链
+                    </a>
+                  </li>
+                
+                  <li class="" >
+                    <a href="/post/link" class="menu">
+                      🙏友链申请
+                    </a>
+                  </li>
+                
+                  <li class="" >
+                    <a href="https://statuesque-mooncake-72534c.netlify.app/" class="menu">
+                      💻系统
+                    </a>
+                  </li>
+                
+                  <li class="" >
+                    <a href="https://flash-empty-cloud.glitch.me/" class="menu">
+                      ☁️网盘
+                    </a>
+                  </li>
+                
+                  <li class="" >
+                    <a href="/tag/tbNXPTSJF_" class="menu">
+                      ⚓️学科
+                    </a>
+                  </li>
+                
+                <li class="search-menu-item hide-on-mobile hide-on-tablet"><a href="#search-lightbox" class="lightbox mfp-inline"><i class="fa fa-search-line"></i></a></li>
+              </ul>
+            </nav>
+            <a href="#search-lightbox" class="lightbox epcl-search-button mfp-inline hide-on-tablet hide-on-desktop"><i class="fa fa-search-line"></i></a>
+            <!-- end: .main-nav -->
+            <div class="clear"></div>
+            <div class="border hide-on-tablet hide-on-mobile"></div>
+          </div>    
+          <div class="clear"></div>
+        </div>
+        <!-- end: .menu-wrapper -->
+        <div class="clear"></div>
+      </header>
+      <div class="hide-on-mobile hide-on-tablet hide-on-desktop">
+        <div id="search-lightbox" class="grid-container grid-small grid-parent mfp-hide">
+          <div class="search-wrapper section">
+            <form id="gridea-search-form" data-update="1665399470386" action="/search/index.html" class="search-form" _lpchecked="1">
+              <input type="text" name="q" id="s" value="" class="search-field" placeholder="搜点啥..." aria-label="搜点啥..." required="">
+              <button type="submit" class="submit" aria-label="Submit">
+                <i class="fa fa-search-line"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <main id="single" class="main grid-container fullcover no-sidebar aos-init aos-animate" data-aos="fade">
+
+        <div class="center content">
+          <div class="featured-image cover" style="background-image: url('https://wyblog1.github.io/post-images/chu-zhong-shu-xue-san-jiao-xing-si-bian-xing-yuan-fu-zhu-xian-de-tian-jia-fang-fa.jpg');">
+            <div class="meta top"> 
+              <time class="meta-info" style="float:left;" datetime="2022-09-12"><i class="fa fa-calendar"></i><span class="lately">1 个月前</span></time>
+              
+            </div>
+            <div class="info">
+              <div class="tags ">
+                
+                      <a href="https://wyblog1.github.io/tag/tbNXPTSJF_/" class="ctag ctag-0 ctag-tbNXPTSJF_" aria-label="">学科</a>
+                    
+              </div>
+              <h1 class="title ularge white bold">初中数学三角形、四边形、圆辅助线的添加方法</h1>
+            </div>
+          </div>
+        </div>  
+
+        <div class="epcl-page-wrapper">
+          <div class="left-content grid-70 np-mobile">
+            <article class="main-article post">
+              <section class="post-content">
+                <div class="text">
+                  <h2 id="1三角形中常见辅助线的添加">1.三角形中常见辅助线的添加</h2>
+<ol>
+<li>与角平分线有关的</li>
+</ol>
+<p>（1） 可向两边作垂线。</p>
+<p>（2）可作平行线，构造等腰三角形</p>
+<p>（3）在角的两边截取相等的线段，构造全等三角形</p>
+<ol start="2">
+<li>与线段长度相关的</li>
+</ol>
+<p>（1）截长：证明某两条线段的和或差等于第三条线段时，经常在较长的线段上截取一段，使得它和其中的一条相等，再利用全等或相似证明余下的等于另一条线段即可</p>
+<p>（2）补短：证明某两条线段的和或差等于第三条线段时，也可以在较短的线段上延长一段，使得延长的部分等于另外一条较短的线段，再利用全等或相似证明延长后的线段等于那一条长线段即可</p>
+<p>（3）倍长中线：题目中如果出现了三角形的中线，方法是将中线延长一倍，再将端点连结，便可得到全等三角形。</p>
+<p>（4）遇到中点，考虑中位线或等腰等边中的三线合一。</p>
+<ol start="3">
+<li>与等腰等边三角形相关的</li>
+</ol>
+<p>（1）考虑三线合一</p>
+<p>（2）旋转一定的度数，构造全都三角形，等腰一般旋转顶角的度数，等边旋转60 °</p>
+<h2 id="2四边形中常见辅助线的添加">2.四边形中常见辅助线的添加</h2>
+<p>特殊四边形主要包括平行四边形、矩形、菱形、正方形和梯形。在解决一些和四边形有关的问题时往往需要添加辅助线。下面介绍一些辅助线的添加方法。</p>
+<ol>
+<li>和平行四边形有关的辅助线作法</li>
+</ol>
+<p>平行四边形是最常见的特殊四边形之一，它有许多可以利用性质，为了利用这些性质往往需要添加辅助线构造平行四边形。</p>
+<p>（1） 利用一组对边平行且相等构造平行四边形</p>
+<p>（2）利用两组对边平行构造平行四边形</p>
+<p>（3）利用对角线互相平分构造平行四边形</p>
+<ol start="2">
+<li>与矩形有辅助线作法</li>
+</ol>
+<p>（1）计算型题，一般通过作辅助线构造直角三角形借助勾股定理解决问题。</p>
+<p>（2）证明或探索题，一般连结矩形的对角线借助对角线相等这一性质解决问题。和矩形有关的试题的辅助线的作法较少。</p>
+<ol start="3">
+<li>和菱形有关的辅助线的作法</li>
+</ol>
+<p>和菱形有关的辅助线的作法主要是连接菱形的对角线，借助菱形的判定定理或性质定定理解决问题。</p>
+<p>（1）作菱形的高</p>
+<p>（2）连结菱形的对角线</p>
+<ol start="4">
+<li>与正方形有关辅助线的作法</li>
+</ol>
+<p>正方形是一种完美的几何图形，它既是轴对称图形，又是中心对称图形，有关正方形的试题较多。解决正方形的问题有时需要作辅助线，作正方形对角线是解决正方形问题的常用辅助线。</p>
+<ol start="5">
+<li>与梯形有关的辅助线的作法</li>
+</ol>
+<p>和梯形有关的辅助线的作法是较多的.主要涉及以下几种类型：</p>
+<p>（1）作一腰的平行线构造平行四边形和特殊三角形</p>
+<p>（2）作梯形的高，构造矩形和直角三角形</p>
+<p>（3）作一对角线的平行线，构造直角三角形和平行四边形</p>
+<p>（4）延长两腰构成三角形</p>
+<p>（5）作两腰的平行线等</p>
+<h2 id="3圆中常见辅助线的添加">3.圆中常见辅助线的添加</h2>
+<ol>
+<li>遇到弦时（解决有关弦的问题时）</li>
+</ol>
+<p>常常添加弦心距，或者作垂直于弦的半径（或直径）或再连结过弦的端点的半径。</p>
+<p>作用：</p>
+<p>①  利用垂径定理</p>
+<p>②  利用圆心角及其所对的弧、弦和弦心距之间的关系</p>
+<p>③  利用弦的一半、弦心距和半径组成直角三角形，根据勾股定理求有关量</p>
+<ol start="2">
+<li>遇到有直径时</li>
+</ol>
+<p>常常添加（画）直径所对的圆周角</p>
+<p>作用：利用圆周角的性质得到直角或直角三角形</p>
+<ol start="3">
+<li>遇到90度的圆周角时</li>
+</ol>
+<p>常常连结两条弦没有公共点的另一端点</p>
+<p>作用：利用圆周角的性质，可得到直径</p>
+<ol start="4">
+<li>遇到弦时</li>
+</ol>
+<p>常常连结圆心和弦的两个端点，构成等腰三角形，还可连结圆周上一点和弦的两个端点</p>
+<p>作用：</p>
+<p>①可得等腰三角形</p>
+<p>②据圆周角的性质可得相等的圆周角</p>
+<ol start="5">
+<li>遇到有切线时</li>
+</ol>
+<p>常常添加过切点的半径（连结圆心和切点）</p>
+<p>作用：利用切线的性质定理可得OA⊥AB，得到直角或直角三角形</p>
+<p>常常添加连结圆上一点和切点</p>
+<p>作用：可构成弦切角，从而利用弦切角定理。</p>
+<ol start="6">
+<li>遇到证明某一直线是圆的切线时</li>
+</ol>
+<p>（1） 若直线和圆的公共点还未确定，则常过圆心作直线的垂线段。<br>
+作用：若OA=r，则l为切线</p>
+<p>（2） 若直线过圆上的某一点，则连结这点和圆心（即作半径）</p>
+<p>作用：只需证OA⊥l，则l为切线</p>
+<p>（3） 有遇到圆上或圆外一点作圆的切线</p>
+<ol start="7">
+<li>遇到两相交切线时（切线长）</li>
+</ol>
+<p>常常连结切点和圆心、连结圆心和圆外的一点、连结两切点</p>
+<p>作用：据切线长及其它性质，可得到</p>
+<p>①  角、线段的等量关系</p>
+<p>②  垂直关系</p>
+<p>③  全等、相似三角形</p>
+<ol start="8">
+<li>遇到三角形的内切圆时</li>
+</ol>
+<p>连结内心到各三角形顶点，或过内心作三角形各边的垂线段</p>
+<p>作用：利用内心的性质，可得</p>
+<p>① 内心到三角形三个顶点的连线是三角形的角平分线</p>
+<p>② 内心到三角形三条边的距离相等</p>
+<ol start="9">
+<li>遇到三角形的外接圆时</li>
+</ol>
+<p>连结外心和各顶点</p>
+<p>作用：外心到三角形各顶点的距离相等</p>
+<ol start="10">
+<li>遇到两圆外离时</li>
+</ol>
+<p>（解决有关两圆的外、内公切线的问题）常常作出过切点的半径、连心线、平移公切线，或平移连心线</p>
+<p>作用：</p>
+<p>①利用切线的性质；</p>
+<p>②利用解直角三角形的有关知识</p>
+<ol start="11">
+<li>遇到两圆相交时</li>
+</ol>
+<p>常常作公共弦、两圆连心线、连结交点和圆心等</p>
+<p>作用：</p>
+<p>①利用连心线的性质、解直角三角形有关知识</p>
+<p>②  利用圆内接四边形的性质</p>
+<p>③  利用两圆公共的圆周的性质</p>
+<p>④ 垂径定理</p>
+<ol start="12">
+<li>遇到两圆相切时</li>
+</ol>
+<p>常常作连心线、公切线</p>
+<p>作用：</p>
+<p>①利用连心线性质</p>
+<p>②切线性质等</p>
+<ol start="13">
+<li>遇到三个圆两两外切时</li>
+</ol>
+<p>常常作每两个圆的连心线</p>
+<p>作用：可利用连心线性质</p>
+<ol start="14">
+<li>遇到四边形对角互补或两个三角形同底并在底的同向且有相等“顶角”时</li>
+</ol>
+<p>常常添加辅助圆</p>
+<p>作用：以便利用圆的性质</p>
+
+                </div>
+                <div class="clear"></div>
+              </section>
+            </article>
+            <div class="clear"></div>
+
+            <section class="related section">
+              
+              <article class="prev grid-50 tablet-grid-50 grid-parent">
+                <div class="thumb cover lazy loaded" style="background-image: url('https://wyblog1.github.io/post-images/chu-zhong-ying-yu-chong-dian-duan-yu-hui-zong.jpg');"></div>
+                 <a href="https://wyblog1.github.io/post/chu-zhong-ying-yu-chong-dian-duan-yu-hui-zong/" class="full-link"></a>
+                 <div class="info">
+                  <time datetime="2022-09-13">2022-09-13</time>
+                  <h4 class="title white no-margin">初中英语重点短语汇总</h4>
+                </div>
+                 <span class="epcl-button red">
+                  <img src="https://wyblog1.github.io/media/images/left-arrow.svg" width="15" alt="Left Arrow">
+                </span>
+                <div class="overlay"></div>
+              </article>
+              
+              
+              <article class="next grid-50 tablet-grid-50 grid-parent">
+                <div class="thumb cover lazy loaded" style="background-image: url('https://wyblog1.github.io/post-images/zui-xin-bu-bian-ban-7~9-nian-ji-bi-bei-gu-shi-wen.jpg');"></div>
+                 <a href="https://wyblog1.github.io/post/zui-xin-bu-bian-ban-7~9-nian-ji-bi-bei-gu-shi-wen/" class="full-link"></a>
+                 <div class="info">
+                  <time datetime="2022-09-12">2022-09-12</time>
+                  <h4 class="title white no-margin">最新部编版7~9年级必背古诗文</h4>
+                </div>
+                 <span class="epcl-button red">
+                  <img src="https://wyblog1.github.io/media/images/right-arrow.svg" width="15" alt="Left Arrow">
+                </span>
+                <div class="overlay"></div>
+              </article>
+              
+
+                <div class="clear"></div>
+            </section>
+
+              <div class="clear"></div>
+              
+            
+              <div id="comments" class="bg-white hosted ">
+                
+                  <!--PC版-->
+<div id="SOHUCS" ></div>
+<script charset="utf-8" type="text/javascript" src="https://cy-cdn.kuaizhan.com/upload/changyan.js" ></script>
+<script type="text/javascript">
+window.changyan.api.config({
+appid: 'cywcqoBVs',
+conf: 'prod_8ce36d49025115cf1f4419dd2421f9b9'
+});
+</script>
+
+
+                
+                
+              </div>
+            
+
+            </div>
+          </div>
+      </main>
+
+          <footer id="footer" class="grid-container">
+        <div class="widgets row gradient-effect">
+            <div class="default-sidebar border-effect">
+              <div class="grid-33 tablet-grid-50 mobile-grid-100">
+                <section id="tag_cloud-2" class="widget widget_epcl_posts_thumbs underline-effect">
+                  <h4 class="widget-title title white bordered">最新文章</h4>
+                  
+                  
+                  <article class="item post-0 post type-post status-publish format-standard has-post-thumbnail hentry">
+                    <a href="https://wyblog1.github.io/post/gong-gao/" class="thumb hover-effect">
+                      <span class="fullimage cover" style="display:block;border-radius:50%;background-image: url('https://wyblog1.github.io/post-images/gong-gao.jpg');"></span>
+                    </a>
+                    <div class="info gradient-effect">
+                      <time datetime="12999-12-31">12999-12-31</time>
+                      <h4 class="title usmall">
+                        <a href="https://wyblog1.github.io/post/gong-gao/">公告</a>
+                      </h4>
+                    </div>
+                    <div class="clear"></div>
+                  </article>
+                  
+                  
+                  
+                  <article class="item post-1 post type-post status-publish format-standard has-post-thumbnail hentry">
+                    <a href="https://wyblog1.github.io/post/qi-nian-ji-shu-xue-shang-ce-quan-ce-chong-nan-dian-zhi-shi-shu-li/" class="thumb hover-effect">
+                      <span class="fullimage cover" style="display:block;border-radius:50%;background-image: url('https://wyblog1.github.io/post-images/qi-nian-ji-shu-xue-shang-ce-quan-ce-chong-nan-dian-zhi-shi-shu-li.jpg');"></span>
+                    </a>
+                    <div class="info gradient-effect">
+                      <time datetime="2022-10-10">2022-10-10</time>
+                      <h4 class="title usmall">
+                        <a href="https://wyblog1.github.io/post/qi-nian-ji-shu-xue-shang-ce-quan-ce-chong-nan-dian-zhi-shi-shu-li/">七年级数学上册全册「重难点知识」梳理</a>
+                      </h4>
+                    </div>
+                    <div class="clear"></div>
+                  </article>
+                  
+                  
+                  
+                  <article class="item post-2 post type-post status-publish format-standard has-post-thumbnail hentry">
+                    <a href="https://wyblog1.github.io/post/jing-xuan-zuo-wen-su-cai-50-tiao/" class="thumb hover-effect">
+                      <span class="fullimage cover" style="display:block;border-radius:50%;background-image: url('https://wyblog1.github.io/post-images/jing-xuan-zuo-wen-su-cai-50-tiao.jpg');"></span>
+                    </a>
+                    <div class="info gradient-effect">
+                      <time datetime="2022-10-10">2022-10-10</time>
+                      <h4 class="title usmall">
+                        <a href="https://wyblog1.github.io/post/jing-xuan-zuo-wen-su-cai-50-tiao/">精选作文素材50条</a>
+                      </h4>
+                    </div>
+                    <div class="clear"></div>
+                  </article>
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  <div class="clear"></div>
+                </section>
+              </div>
+
+              <div class="grid-33 tablet-grid-50 mobile-grid-100">
+                <section id="tag_cloud-2" class="widget widget_tag_cloud underline-effect">
+                  <h4 class="widget-title title white bordered">标签云</h4>
+                  <div class="tagcloud">
+                    
+                      <a href="https://wyblog1.github.io/tag/E_inEgYQM/" class="ctag ctag-0 ctag-E_inEgYQM" aria-label="">Gridea</a>
+                    
+                      <a href="https://wyblog1.github.io/tag/tbNXPTSJF_/" class="ctag ctag-1 ctag-tbNXPTSJF_" aria-label="">学科</a>
+                    
+                      <a href="https://wyblog1.github.io/tag/QKQSzNAIL4/" class="ctag ctag-2 ctag-QKQSzNAIL4" aria-label="">blibli page 2</a>
+                    
+                      <a href="https://wyblog1.github.io/tag/eLwD0kcI2/" class="ctag ctag-3 ctag-eLwD0kcI2" aria-label="">关于</a>
+                    
+                      <a href="https://wyblog1.github.io/tag/HWAQ5fZO2X/" class="ctag ctag-4 ctag-HWAQ5fZO2X" aria-label="">blibli</a>
+                    
+                      <a href="https://wyblog1.github.io/tag/hMxkSl6Aon/" class="ctag ctag-5 ctag-hMxkSl6Aon" aria-label="">无赖哥哥</a>
+                    
+                      <a href="https://wyblog1.github.io/tag/lab/" class="ctag ctag-6 ctag-lab" aria-label="">实验室</a>
+                    
+                      <a href="https://wyblog1.github.io/tag/QVs-lkuZG3/" class="ctag ctag-7 ctag-QVs-lkuZG3" aria-label="">potos</a>
+                    
+                  </div>
+                  <div class="clear"></div>
+                </section>
+              </div>
+
+              <div class="grid-33 tablet-grid-50 mobile-grid-100">
+                <section id="epcl_about-2" class="widget widget_epcl_about underline-effect">
+                  <h4 class="widget-title title white bordered">关于我</h4>
+                  <div class="avatar">
+                    <a href="" class="translate-effect thumb"><span class="fullimage cover" style="background-image: url(https://wyblog1.github.io/images/avatar.png);"></span></a>
+                  </div>
+                  <div class="info">
+                    <h4 class="title small author-name gradient-effect no-margin"><a href="">无影的博客</a></h4>
+                    <p class="founder">我是无影,主要更新blibli的几部沙雕动画.有时间会更别的东西.</p>
+                    <div class="social">
+                      
+                          
+                            <a href="https://github.com/612901" class="translate-effect" target="_blank"><i class="fa fa-github"></i></a>
+                        
+                      
+                        
+                      
+                        
+                      
+                        
+                      
+                        
+                      
+                    </div> 
+                  </div>
+                  <div class="clear"></div>
+                  </section>
+              </div>
+
+            </div>
+            <div class="clear"></div>
+        </div>
+
+        <div class="logo">
+          <a href="https://wyblog1.github.io"><img src="\media\images\custom-footerLogo.png" alt=""></a>
+        </div>
+        <p class="published border-effect">
+          ©2019 共 134 篇文章
+          <br/>
+          Theme <a href="https://gridea.dev/" target="_blank">「breek」</a> Powered by <a href="https://gridea.dev/" target="_blank">「Gridea」</a>
+        </p>
+        
+        <a href="javascript:void(0)" id="back-to-top" class="epcl-button dark" style="display:none">
+          <i class="fa fa-arrow"></i>
+        </a>
+    </footer>
+    
+    <div class="clear"></div>
+
+        
+
+      
+    <script src="https://wyblog1.github.io/media/js/functions-post.js"></script>
+
+    </div>
+    <!-- end: #wrapper -->
+  </body>
+</html>
